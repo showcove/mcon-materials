@@ -88,6 +88,7 @@ struct SymbolListView: View {
           do {
             symbols = try await model.availableSymbols()
           } catch {
+            print("maimai")
             lastErrorMessage = error.localizedDescription
           }
         }
